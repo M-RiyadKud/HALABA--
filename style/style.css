@@ -1,0 +1,810 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+
+    font-family: "Lilita One", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+
+}
+
+a {
+    text-decoration: none;
+}
+
+ul {
+    list-style: none;
+}
+
+p::selection,h2::selection,h1::selection,h3::selection{
+    background-color: brown;
+    color: white;
+}
+
+.container {
+    width: 90%;
+    margin: auto;
+}
+
+/*         start nav          */
+
+nav {
+    width: 100%;
+    height: 65px;
+    background-color: #1a1a1a;
+    position: fixed;
+    top: 0px;
+    left: 0px;
+    z-index: 100;
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.icon {
+    display: flex;
+    gap: 20px;
+    align-items: center;
+    width: 200px;
+}
+
+.icon img {
+    width: 50px;
+    transition: .3s;
+}
+
+.icon img:hover {
+    width: 54px;
+}
+
+.icon h2 {
+    color: brown;
+    font-size: 38px;
+    font-style: bold;
+    transition: .3s;
+}
+
+.icon h2:hover {
+    cursor: pointer;
+    transform: scale(1.1);
+}
+
+nav .links li {
+    color: rgb(198, 193, 193);
+    display: inline;
+    margin-right: 50px;
+    font-size: 19px;
+    transition: .3s;
+}
+
+nav ul li:hover {
+    color: brown;
+    transform: scale(1.1);
+
+}
+
+
+.shop-select {
+    position: relative;
+}
+
+.shop-select .mmm {
+    position: absolute;
+    flex-direction: column;
+    justify-content: space-between;
+    background-color: #1a1a1a;
+    width: 220px;
+    padding: 5px 10px 10px 10px;
+    margin-bottom: -20px;
+    bottom: -110px;
+    left: -5px;
+    z-index: 50px;
+    visibility: hidden;
+    transition: .3s;
+
+}
+
+.shop-select:hover .mmm {
+    visibility: visible;
+}
+
+.shop-select .mmm li {
+    display: block;
+    margin-bottom: 10px;
+}
+
+
+
+/*         heroimg           */
+
+.hero {
+    background-image: url("../images/Hero_upscayl_2x_upscayl-standard-4x.png");
+    background-repeat: no-repeat;
+    background-size: cover;
+    width: 100%;
+    height: calc(100vh - 65px);
+    margin-top: 65px;
+    position: relative;
+    margin-bottom: 0px;
+}
+
+.herotext {
+    padding: 40px;
+    position: absolute;
+    top: 50%;
+    left: 25%;
+    transform: translate(-50%, -50%);
+    border-radius: 20px;
+    background-color: rgba(0, 0, 0, 0.186);
+
+}
+
+.herotext h1 {
+    color: white;
+    font-size: 50px;
+    transition: .3s;
+
+}
+
+.herotext h1:hover {
+    transform: scale(1.1);
+}
+
+.herotext span {
+    color: brown;
+}
+
+.herotext p {
+    color: rgb(201, 201, 201);
+    font-size: 20px;
+    line-height: 40px;
+    transition: .3s;
+    text-align: center;
+}
+
+.herotext p:hover {
+    transform: scale(1.1);
+}
+
+.herotext button {
+    margin-top: 20px;
+    width: 220px;
+    height: 50px;
+    font-size: 22px;
+    color: white;
+    background: brown;
+    border-radius: 10px;
+    border: 1px solid white;
+    transition: .3s;
+    float: right;
+    box-shadow: 0px 5px 10px 0px gray;
+}
+
+.herotext button:hover {
+    transform: scale(1.1);
+    background-color: rgba(165, 42, 42, 0.538);
+    cursor: pointer;
+}
+
+
+/*      News      */
+.Fight-News {
+    background: -webkit-linear-gradient(top, black 40%, white);
+    width: 100%;
+    padding-top: 100px;
+
+}
+
+.Fight-News h2 {
+    color: brown;
+    font-size: 45px;
+    text-align: center;
+    transition: .3s;
+    position: relative;
+}
+
+.Fight-News span {
+    color: white;
+}
+
+.Fight-News h2:hover {
+    transform: scale(1.1);
+}
+
+.News {
+    width: 100%;
+    display: grid;
+    padding: 80px;
+    padding-top: 40px;
+    grid-template-columns: repeat(4, 1fr);
+    grid-gap: 30px 20px;
+
+}
+
+
+
+.MainNews,
+.CenterNews,
+.rightnews {
+    background-color: white;
+    box-shadow: 20px 20px 20px 0px black;
+    transition: .3s;
+
+}
+
+.MainNews:hover,
+.CenterNews:hover,
+.rightnews:hover {
+    transform: scale(1.05);
+    box-shadow: 20px 20px 20px 0px black;
+
+}
+
+.MainNews {
+    width: 400px;
+    border-radius: 20px;
+
+}
+
+.MainNews {
+    grid-column: 1/2;
+    grid-row: 1/3;
+
+}
+
+.Newsimg {
+    width: 100%;
+    height: 70%;
+    margin: auto;
+    overflow: hidden;
+    margin-bottom: 20px;
+    box-shadow: 0px 10px 20px 0px black;
+
+}
+
+.Newsimg img {
+    width: 100%;
+    height: 100%;
+}
+
+.MainNews p {
+    margin-left: 10px;
+    color: brown;
+    margin-right: 10px;
+}
+
+.MainNews h3 {
+    margin-left: 10px;
+    margin-right: 10px;
+    font-size: 26px;
+    margin-bottom: 30px;
+}
+
+/* centernews */
+
+.CenterNews {
+    overflow: auto;
+    height: 200PX;
+    width: 400px;
+    border-radius: 20px;
+}
+
+.CenterNewsimg {
+    float: left;
+    height: 100%;
+    overflow: hidden;
+    margin-right: 10px;
+    box-shadow: 10px 0px 20px 0px black;
+}
+
+.CenterNewsimg img {
+    height: 100%;
+    width: 100%;
+}
+
+.CenterNews p,
+.rightnews p {
+    margin-top: 10px;
+    color: brown;
+}
+
+.CenterNews h3,
+.rightnews h3 {
+    margin-top: 5px;
+    font-size: 20px;
+}
+
+/*   right news  */
+
+.rightnews {
+    grid-column: 3/5;
+    overflow: hidden;
+    height: 200PX;
+    width: 500px;
+    border-radius: 40px;
+}
+
+.rightnewsimg {
+    float: left;
+    height: 100%;
+    width: 40%;
+    overflow: hidden;
+    margin-right: 10px;
+    box-shadow: 10px 0px 20px 0px black;
+}
+
+.rightnews img {
+    height: 100%;
+    width: 100%;
+}
+
+
+/*       KnockOuts        */
+
+.Knockouts {
+    background-image: url("../images/knockoutback.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-attachment: fixed;
+    padding-top: 40px;
+}
+
+.KnockoutsTitel {
+    color: brown;
+    display: inline-block;
+    font-size: 40px;
+    background-color: rgba(0, 0, 0, 0.658);
+    box-shadow: 0px 5px 10px 0px white;
+    padding: 5px 10px;
+    border-radius: 10px;
+    margin-bottom: 30px;
+    transition: .3s;
+}
+
+.Knockouts span {
+    color: white;
+}
+
+.KnockoutsTitel:hover {
+    transform: scale(1.1);
+}
+
+.knockouts-vids {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.knockouts-box {
+    padding: 20px;
+    margin-bottom: 80px;
+    background-color: rgba(0, 0, 0, 0.658);
+    border-radius: 5px;
+    box-shadow: 0px 10px 10px 0px white;
+    transition: .3s;
+    width: 30%;
+}
+
+
+.knockouts-box:hover {
+    transform: scale(1.1);
+}
+
+
+.knockouts-box p {
+    margin-top: 10px;
+    margin-right: 4px;
+    color: white;
+    font-size: 14px;
+
+}
+
+.knockouts-box h3 {
+    color: aliceblue;
+    transition: .3s;
+    margin: 10px auto;
+}
+
+.knockouts-box span {
+    color: brown;
+}
+
+.knockouts-box h3:hover {
+    transform: scale(1.05);
+}
+
+.vidcon {
+    width: 100%;
+    margin: auto;
+}
+
+.vidcon video {
+    width: 100%;
+}
+
+
+/*       Fighters        */
+
+.Fighters h2 {
+    color: brown;
+    text-align: center;
+    font-size: 45px;
+    margin-top: 60px;
+    margin-bottom: 60px;
+    transition: .3s;
+
+}
+
+.Fighters h2:hover {
+    transform: scale(1.1);
+}
+
+.Fighters-parent {
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: space-around;
+    perspective: 700px;
+    width: 100%;
+    height: 200px;
+    margin-bottom: 160px;
+}
+
+.pic {
+    width: 200px;
+    height: 200px;
+    border-radius: 50%;
+    transform-style: preserve-3d;
+    position: relative;
+    transition: .3s;
+    margin: auto;
+    top: 0px;
+    box-shadow: 20px 20px 20px 0px black;
+
+
+}
+
+
+.front,
+.back {
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    overflow: hidden;
+    border-radius: 50%;
+
+}
+
+.front {
+    backface-visibility: hidden;
+    z-index: 2;
+}
+
+.front img {
+    width: 100%;
+    height: 100%;
+}
+
+.back {
+    transform: rotateY(-180deg);
+    background-color: rgb(0, 0, 0);
+}
+
+.pic:hover {
+    transform: rotateY(180deg);
+}
+
+.back h2 {
+    color: brown;
+    font-size: 22px;
+    margin-bottom: 5px;
+}
+
+.back .cls {
+    color: rgba(255, 255, 255, 0.634);
+    font-size: 14px;
+    text-align: center;
+    margin-bottom: 5px;
+}
+
+.back p {
+    color: white;
+    font-size: 18px;
+    text-align: center;
+    margin-bottom: 5px;
+}
+
+
+
+/*       Shop        */
+
+.Shop {
+    background-image: url("../images/background.jpg");
+    width: 100%;
+    padding: 20px;
+    padding-bottom: 60px;
+}
+
+.Search-box {
+    display: flex;
+    justify-content: space-between;
+    width: 400px;
+    height: 40px;
+    margin: 60px auto;
+    padding: 10px;
+    background-color: white;
+    border-radius: 20px;
+    transition: .3s;
+}
+
+.Search-box input {
+    border: 0px;
+    margin-left: 10px;
+    font-size: 16px;
+}
+
+.Search-box select {
+    border: 0px;
+    color: gray;
+
+}
+
+.Search-box select option {
+    color: black;
+}
+
+.Search-box i {
+    font-weight: bolder;
+    font-size: 18px;
+    margin-right: 10px;
+    transition: .3s;
+
+}
+
+.Search-box i:hover {
+    transform: scale(1.1);
+}
+
+.Search-box:hover {
+    transform: scale(1.1);
+}
+
+.shop {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    grid-template-rows: repeat(2, 1fr);
+    grid-gap: 5%;
+}
+
+.product {
+    width: 100%;
+    background-color: rgb(0, 0, 0);
+    border-radius: 10px;
+    overflow: hidden;
+    padding-top: 10px;
+    padding-bottom: 20px;
+    text-align: center;
+    color: white;
+    box-shadow: 0px 10px 20px 0px white;
+    transition: .3s;
+}
+
+.product:hover {
+    transform: scale(1.1);
+}
+
+.product-img {
+    width: 80%;
+    overflow: hidden;
+    margin: auto;
+    margin-bottom: 15px;
+    box-shadow: 0px 10px 10px 0px red;
+     border-radius: 20px;
+    
+}
+
+.product-img img:hover {
+    transform: scale(1.1);
+}
+
+.product-img img {
+    width: 100%;
+   height: 100%;
+    transition: .3s;
+}
+
+.product h2 {
+    margin-bottom: 5px;
+    color: white;
+}
+
+.product p {
+    margin-bottom: 10px;
+    color: green;
+}
+
+.product button {
+    width: 120px;
+    height: 20px;
+    border-radius: 10px 20px;
+    background-color: gray;
+    color: black;
+    border: 1px solid gray;
+    margin-bottom: 10px;
+    transition: .5s;
+    cursor: pointer;
+}
+
+.product button:hover {
+    transform: scale(1.1);
+    background-color:white ;
+}
+
+
+.buttonandclick {
+    width: 80%;
+    position: relative;
+    margin: auto;
+}
+.product sub{
+    font-size: 16px;
+}
+
+.product i {
+    margin-right: 20px;
+    color: aliceblue;
+    position: absolute;
+    left: 10px;
+    animation-name: click;
+    animation-duration: .5s;
+    animation-direction: reverse;
+    animation-iteration-count: infinite;
+    opacity: 0;
+}
+
+.product:hover i {
+    opacity: 1;
+}
+
+@keyframes click {
+    from {
+        left: 10px;
+    }
+
+    to {
+        left: 20px;
+    }
+}
+/*       Review           */
+.Review{
+background: -webkit-linear-gradient(top,black 40%,white );
+padding: 60px;
+padding-bottom: 100px;
+}
+
+.PReview{
+    margin-top: 60px;
+   display: flex;
+    flex-flow:row wrap ;
+    justify-content: space-between;
+    
+}
+.ReviewProfile-box{
+ 
+    width: 30%;
+    overflow: auto;
+    color: aliceblue;
+    overflow: hidden;
+    background-color: rgb(0, 0, 0);
+    border-radius: 20px;
+    padding: 20px;
+    transition: .3s;
+    box-shadow: 0px 10px 20px 0px white;
+
+}
+.ReviewProfile-box:hover{
+    transform: scale(1.1);
+}
+/* .leftbox{
+    float: left;
+}
+.rightbox{
+    float:right;
+} */
+.ReviewProfile-img {
+    width: 80px;
+    border-radius: 50%; 
+    overflow: hidden;
+    float: left;
+    margin-right: 20px;
+    transition: .3s;
+}
+
+.ReviewProfile-img:hover{
+    width: 83px;
+}
+
+.ReviewProfile-img Img{
+    width: 100%;
+}
+
+.ReviewText ul{
+    list-style: none;
+}
+.ReviewText ul li{
+    display: inline;
+}
+.ReviewText ul li i{
+    font-size: 10px;
+    color: yellow;
+    margin-top: 16px;
+}
+
+.ReviewText h2{
+    color: white;
+    margin-bottom:24px ;
+    transition: .3s;
+}
+.ReviewText h2:hover{
+    color: brown;
+    font-size: 26px;
+}
+.ReviewText p{
+    color: rgba(255, 255, 255, 0.786);
+    font-size: 16px;
+    transition: .3s;
+}
+.ReviewText p:hover{
+    color: aliceblue;
+}
+
+
+/*               footer             */
+footer{
+    background-color: rgb(3, 19, 37);
+    padding-top: 40px;
+    padding-bottom: 40px;
+    width: 100%;
+    text-align: center;
+}
+
+footer img{
+    width: 300px;
+    margin: 10PX auto;
+    border-radius: 20px;
+    transition: .3s;
+}
+footer img:hover{
+    width: 340px;
+}
+
+footer ul {
+    list-style: none;
+    
+}
+footer ul li {
+    display: inline;
+}
+footer ul li i{
+      margin: 5px 10px;
+      color: white;
+      font-size: 22px;
+      transition: .3s;
+}
+footer ul li:hover i{
+    margin-top: 2;
+    font-size: 24;
+    color: brown;
+}
+footer p{
+    font-size: 14px;
+    color: aliceblue;
+    letter-spacing: 2px;
+    margin-top: 5PX;
+    transition: .3s;
+}
+footer p:hover{
+    font-size: 16;
+    color: gray;
+}
